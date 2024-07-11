@@ -106,5 +106,20 @@ int main(){
         cout<<"-----NOT AVAILABLE-----"<<endl;
     }
 
+
+    vector<char> myVector = {'a','e','i','o','i','u'};
+    
+    auto it = find(myVector.begin()+3,myVector.end(),'i');
+    
+    if (it != myVector.end()){
+        int distance = (it - myVector.begin());
+        cout<<distance<<endl;
+    }else if (it == myVector.end()){
+        cout<<"ELEMENT NOT AVAILABLE"<<endl;
+    }
+
     return 0;
 }
+
+
+
